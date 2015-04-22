@@ -10,7 +10,7 @@ public class Frame extends JFrame{
 	public Frame() {
 		JFrame fenetre = new JFrame();
 		fenetre.setTitle("Projet");
-	    fenetre.setSize(300, 350);
+	    fenetre.setSize(300, 180);
 	    fenetre.setLocationRelativeTo(null);
 	    panel_utilisateur monPanel = new panel_utilisateur();
 	    fenetre.setContentPane(monPanel); 
