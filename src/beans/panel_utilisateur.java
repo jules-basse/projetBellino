@@ -25,8 +25,9 @@ public class panel_utilisateur extends JPanel implements ActionListener{
 	
 	public panel_utilisateur()
 	{
-		//grille champs nom et numero
 		JPanel paneluser=new JPanel();
+
+		//grille champs nom et numero
 		paneluser.setLayout(new GridLayout(2,1,0,8));
 		
 		// Champs nom
@@ -49,8 +50,7 @@ public class panel_utilisateur extends JPanel implements ActionListener{
         ButtonGroup group = new ButtonGroup();
         group.add(jbuser);
         group.add(jbadmin);
-        boolean select = jbuser.isSelected();
-        jbuser.setSelected(true);
+        jbuser.isSelected();
         
         jbuser.addActionListener(this);
         jbadmin.addActionListener(this);
