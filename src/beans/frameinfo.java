@@ -6,6 +6,7 @@ public class frameinfo extends JFrame{
 	
 	private String type_frame;
 	private String nom_frame;
+	private JFrame fenetre;
 	
 	public frameinfo(String nom, String id) {
 		JFrame fenetre = new JFrame();
@@ -16,12 +17,15 @@ public class frameinfo extends JFrame{
 	    fenetre.setContentPane(monPanel); 
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
 		fenetre.setVisible(true);
-	}
+}
+	
+
+	
 	public String getTypeFrame() {
 		return this.type_frame;
 	}
 	public void setType(String type) {
-		this.type_frame = type_frame;
+		this.type_frame = type;
 	}
 	public String getNom_frame() {
 		return nom_frame;

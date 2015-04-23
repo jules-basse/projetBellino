@@ -6,9 +6,10 @@ public class Frame extends JFrame{
 	
 	private String type_frame;
 	private String nom_frame;
+	private JFrame fenetre;
 	
 	public Frame() {
-		JFrame fenetre = new JFrame();
+		fenetre = new JFrame();
 		fenetre.setTitle("Projet");
 	    fenetre.setSize(300, 180);
 	    fenetre.setLocationRelativeTo(null);
@@ -18,6 +19,8 @@ public class Frame extends JFrame{
 		fenetre.setVisible(true);
 		fenetre.setResizable(false);
 	}
+	
+	
 	public String getTypeFrame() {
 		return this.type_frame;
 	}

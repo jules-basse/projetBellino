@@ -16,7 +16,7 @@ import javax.swing.SwingUtilities;
 
 public class panelinfo extends JPanel implements ActionListener{
 	private JTextField jtinfonom, jtinfoid;
-	private JButton jbquitter;
+	private JButton jbquitter, jbmodif;
 	
 	public panelinfo(String nom, String id, JFrame frame )
 	{
@@ -29,6 +29,7 @@ public class panelinfo extends JPanel implements ActionListener{
 		jtinfonom.setText(nom);
 		jtinfoid.setText(id);
 		jtinfonom.setPreferredSize(new Dimension(100,20));
+		panel.add(jbmodif = new JButton("Informations"));
 		this.add(panel, BorderLayout.NORTH);
 		this.setVisible(true);
 		
