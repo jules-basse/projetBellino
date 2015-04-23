@@ -10,7 +10,7 @@ public class frameinfo extends JFrame{
 	public frameinfo(String nom, String id) {
 		JFrame fenetre = new JFrame();
 		fenetre.setTitle("Info");
-	    fenetre.setSize(330, 260);
+		fenetre.setSize(300, 180);
 	    fenetre.setLocationRelativeTo(null);
 	    panelinfo monPanel = new panelinfo(nom, id, this);
 	    fenetre.setContentPane(monPanel); 

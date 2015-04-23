@@ -16,7 +16,7 @@ public class Frame extends JFrame{
 	    fenetre.setContentPane(monPanel); 
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
 		fenetre.setVisible(true);
-
+		fenetre.setResizable(false);
 	}
 	public String getTypeFrame() {
 		return this.type_frame;
@@ -30,7 +30,4 @@ public class Frame extends JFrame{
 	public void setNom_frame(String nom_frame) {
 		this.nom_frame = nom_frame;
 	}
-	
-	
-	
 }

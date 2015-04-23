@@ -1,6 +1,7 @@
 package beans;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
@@ -20,21 +21,21 @@ public class panelinfo extends JPanel implements ActionListener{
 	public panelinfo(String nom, String id, JFrame frame )
 	{
 		JPanel panel =new JPanel();
-		panel.setLayout(new GridLayout(4, 2, 5, 5));
+		panel.setLayout(new GridLayout(2,1,0,8));
 		panel.add(new JLabel("nom :"));
 		panel.add(jtinfonom=new JTextField());
 		panel.add(new JLabel("numero : "));
 		panel.add(jtinfoid=new JTextField());
 		jtinfonom.setText(nom);
 		jtinfoid.setText(id);
+		jtinfonom.setPreferredSize(new Dimension(100,20));
 		this.add(panel, BorderLayout.NORTH);
 		this.setVisible(true);
 		
 		JPanel panelb = new JPanel();
-		panelb.setLayout(new GridLayout(3,3,5,5));
 		panelb.add(jbquitter = new JButton("Quitter"));
 		jbquitter.addActionListener(this);
-		this.add(panelb);
+		this.add(panelb, BorderLayout.NORTH);
 		
 	}
 
@@ -50,9 +51,5 @@ public class panelinfo extends JPanel implements ActionListener{
 				frame.dispose();
 			}		
 	    }
-		
-		
-		
 	}
-
 }
