@@ -22,12 +22,13 @@ public class panelinfoadmin extends JPanel implements ActionListener{
 		public panelinfoadmin(String nom, String numero, JFrame frame)
 		{
 			JPanel paneladmin=new JPanel();
-			paneladmin.add(jbclient = new JButton("gestion des clients"));
-			paneladmin.add(jbcontrat = new JButton("gestion des contrats"));
-			paneladmin.add(jbprestation = new JButton("gestion des prestations"));
-			paneladmin.add(jbfacture = new JButton("gestion des factures"));
-			
+			paneladmin.setLayout(new GridLayout(5,1,0,8));
+			paneladmin.add(jbclient = new JButton("Gestion des clients"));
+			paneladmin.add(jbcontrat = new JButton("Gestion des contrats"));
+			paneladmin.add(jbprestation = new JButton("Gestion des prestations"));
+			paneladmin.add(jbfacture = new JButton("Gestion des factures"));
 			paneladmin.add(jbquitter = new JButton("Quitter"));
+			
 			jbclient.addActionListener(this);
 			jbcontrat.addActionListener(this);
 			jbprestation.addActionListener(this);
