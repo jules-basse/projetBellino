@@ -86,6 +86,7 @@ public class panel_utilisateur extends JPanel implements ActionListener{
 			}
 			else if (jbadmin.isSelected()==true)
 			{
+				frameintadmin infoadmin = new frameintadmin(nom,id);
 				jtnom.setText(rien);
 				jtid.setText(rien);
 			}
