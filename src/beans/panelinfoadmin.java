@@ -3,6 +3,7 @@ package beans;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,6 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 
 public class panelinfoadmin extends JPanel implements ActionListener{
 		private JButton jbclient, jbcontrat, jbprestation, jbfacture, jbquitter;
@@ -36,8 +38,22 @@ public class panelinfoadmin extends JPanel implements ActionListener{
 		}
 
 		@Override
-		public void actionPerformed(ActionEvent arg0) {
-			// TODO Auto-generated method stub
+		public void actionPerformed(ActionEvent e) {
+			if (e.getSource()==jbquitter)
+			{
+				Window window = SwingUtilities.windowForComponent(this);
+				if (window instanceof JFrame) {
+					JFrame frame = (JFrame) window;
+			 
+					frame.setVisible(false);
+					frame.dispose();
+				}		
+			}
+			if (e.getSource()==jbclient)
+			{
+				frameinfoadmin infoclient = new frameinfoadmin();
+				infoclient.getinfoclient();
+			}
 			
 		}
 
