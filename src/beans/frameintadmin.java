@@ -15,7 +15,7 @@ public class frameintadmin extends JFrame{
 	    fenetre.setSize(330, 260);
 	    fenetre.setLocationRelativeTo(null);
 	    panelinfoadmin monPanel = new panelinfoadmin(nom, id, this);
-	    fenetre.setContentPane(JFrame.EXIT_ON_CLOSE);   
+	    fenetre.setContentPane(monPanel);   
 		fenetre.setVisible(true);
 }
 	

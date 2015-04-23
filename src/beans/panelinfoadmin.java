@@ -15,53 +15,24 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
 public class panelinfoadmin extends JPanel implements ActionListener{
-		private JButton jbvalider, jbquitter;
+		private JButton jbclient, jbcontrat, jbprestation, jbfacture, jbquitter;
 		
 		public panelinfoadmin(String nom, String numero, JFrame frame)
 		{
-			JPanel paneluser=new JPanel();
-
-			//grille champs nom et numero
-			paneluser.setLayout(new GridLayout(2,1,0,8));
+			JPanel paneladmin=new JPanel();
+			paneladmin.add(jbclient = new JButton("gestion des clients"));
+			paneladmin.add(jbcontrat = new JButton("gestion des contrats"));
+			paneladmin.add(jbprestation = new JButton("gestion des prestations"));
+			paneladmin.add(jbfacture = new JButton("gestion des factures"));
 			
-			// Champs nom
-			paneluser.add(new JLabel("Nom :"));
-			paneluser.add(jtnom=new JTextField());
-			jtnom.addActionListener(this);
-			
-			// Champs numero
-			paneluser.add(new JLabel("Numero : "));
-			paneluser.add(jtid=new JTextField());
-			jtid.addActionListener(this);
-			
-			jtnom.setPreferredSize(new Dimension(120,20));
-			this.add(paneluser);
-			
-			// boutons radio
-	        panelRadio.add(jbuser);
-	        panelRadio.add(jbadmin);
-
-	        ButtonGroup group = new ButtonGroup();
-	        group.add(jbuser);
-	        group.add(jbadmin);
-	        jbuser.isSelected();
-	        
-	        jbuser.addActionListener(this);
-	        jbadmin.addActionListener(this);
-	        
-	        panelRadio.setLayout(new GridLayout(1,2));
-	        this.add(panelRadio, BorderLayout.NORTH);
-			
-	        // boutons validation et quitter
-	        JPanel paneluserbutton=new JPanel();
-			paneluserbutton.add(jbvalider = new JButton("Valider"));
-			paneluserbutton.add(jbquitter = new JButton("Quitter"));
-			jbvalider.addActionListener(this);
+			paneladmin.add(jbquitter = new JButton("Quitter"));
+			jbclient.addActionListener(this);
+			jbcontrat.addActionListener(this);
+			jbprestation.addActionListener(this);
+			jbfacture.addActionListener(this);
 			jbquitter.addActionListener(this);
-			jbvalider.setPreferredSize(new Dimension(100,20));
-			jbquitter.setPreferredSize(new Dimension(100,20));
 			
-			this.add(paneluserbutton, BorderLayout.NORTH);
+			this.add(paneladmin, BorderLayout.NORTH);
 		}
 
 		@Override
