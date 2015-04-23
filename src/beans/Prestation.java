@@ -3,7 +3,7 @@ package beans;
 public class Prestation {
 	
 	private String nom_prestation;
-	private String description_presation;
+	private String description_prestation;
 	private double tarif_prestation;
 	private int modificateur_tarif;
 	private int tarif_global_prestation;
@@ -15,11 +15,11 @@ public class Prestation {
 	public void setNom_prestation(String nom_prestation) {
 		this.nom_prestation = nom_prestation;
 	}
-	public String getDescription_presation() {
-		return description_presation;
+	public String getDescription_prestation() {
+		return description_prestation;
 	}
-	public void setDescription_presation(String description_presation) {
-		this.description_presation = description_presation;
+	public void setDescription_prestation(String description_prestation) {
+		this.description_prestation = description_prestation;
 	}
 	public double getTarif_prestation() {
 		return tarif_prestation;
