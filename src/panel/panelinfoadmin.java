@@ -11,13 +11,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import beans.frame_contrat;
+import beans.frameinfoadmin;
+
 public class panelinfoadmin extends JPanel implements ActionListener{
 		private JButton jbclient, jbcontrat, jbprestation, jbfacture, jbquitter;
 		
 		public panelinfoadmin(String nom, String numero, JFrame frame)
 		{
 			JPanel paneladmin=new JPanel();
-			paneladmin.setLayout(new GridLayout(5,1, 0, 10));
 			paneladmin.add(jbclient = new JButton("gestion des clients"));
 			paneladmin.add(jbcontrat = new JButton("gestion des contrats"));
 			paneladmin.add(jbprestation = new JButton("gestion des prestations"));
@@ -47,21 +49,21 @@ public class panelinfoadmin extends JPanel implements ActionListener{
 			}
 			if (e.getSource()==jbclient)
 			{
-				frameinfoadmin infoclient = new frameinfoadmin();
+				frameinfoadmin infoclient = new frameinfoadmin("client");
 				infoclient.getinfo("client");
 			}
 			if (e.getSource()==jbcontrat)
 			{
-				frame_contrat infocontrat = new frame_contrat();
+				frameinfoadmin infoclient = new frameinfoadmin("contrat");
 			}
 			if (e.getSource()==jbprestation)
 			{
-				frameinfoadmin infoprestation = new frameinfoadmin();
+				frameinfoadmin infoprestation = new frameinfoadmin("prestation");
 				infoprestation.getinfo("prestation");
 			}
 			if (e.getSource()==jbfacture)
 			{
-				frameinfoadmin infofacture = new frameinfoadmin();
+				frameinfoadmin infofacture = new frameinfoadmin("facture");
 				infofacture.getinfo("facture");
 			}
 			
