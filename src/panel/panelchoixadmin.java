@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-import beans.frame_contrat;
+import beans.*;
 
 public class panelchoixadmin extends JPanel implements ActionListener  {
 	private JButton jbajouter, jbconsulter, jbquitter;
@@ -55,6 +55,10 @@ public class panelchoixadmin extends JPanel implements ActionListener  {
 			if(this.getType()=="contrat")
 			{
 				frame_contrat maframe = new frame_contrat();
+			}
+			if(this.getType()=="prestation")
+			{
+				frame_prestation maframe = new frame_prestation();
 			}
 		}
 		
