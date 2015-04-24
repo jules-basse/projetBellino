@@ -11,13 +11,12 @@ public class frameinfo extends JFrame{
 	public frameinfo(String nom, String id) {
 		JFrame fenetre = new JFrame();
 		fenetre.setTitle("Info");
-		fenetre.setSize(300, 180);
+	    fenetre.setSize(330, 260);
 	    fenetre.setLocationRelativeTo(null);
 	    panelinfo monPanel = new panelinfo(nom, id, this);
 	    fenetre.setContentPane(monPanel); 
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
 		fenetre.setVisible(true);
-		fenetre.setResizable(false);
 }
 	
 
@@ -35,4 +34,6 @@ public class frameinfo extends JFrame{
 		this.nom_frame = nom_frame;
 	}
 	
+
+
 }

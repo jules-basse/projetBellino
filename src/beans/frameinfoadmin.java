@@ -17,9 +17,10 @@ public class frameinfoadmin extends JFrame{
 		fenetre.setVisible(true);
 	}
 	
-	public void getinfoclient()
+	public void getinfo(String nom)
 	{
-		fenetre.setTitle("Liste client");
+		String titre = "Liste " + nom;
+		fenetre.setTitle(titre);
 	}
 
 }

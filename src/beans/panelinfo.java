@@ -29,13 +29,13 @@ public class panelinfo extends JPanel implements ActionListener{
 		jtinfonom.setText(nom);
 		jtinfoid.setText(id);
 		jtinfonom.setPreferredSize(new Dimension(100,20));
+		panel.add(jbmodif = new JButton("Informations"));
 		this.add(panel, BorderLayout.NORTH);
+		this.setVisible(true);
 		
 		JPanel panelb = new JPanel();
-		panelb.add(jbmodif = new JButton("Informations"));
 		panelb.add(jbquitter = new JButton("Quitter"));
 		jbquitter.addActionListener(this);
-		jbmodif.addActionListener(this);
 		this.add(panelb, BorderLayout.NORTH);
 		
 	}
