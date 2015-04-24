@@ -18,10 +18,7 @@ import javax.swing.SwingUtilities;
 
 public class panel_contrat extends JPanel implements ActionListener{
 	private JButton jbvalider, jbquitter;
-	private JTextField jtId , jtFournisseur, jtNom, jtSiret;
-	JPanel panelRadio = new JPanel();
-    private JRadioButton jbuser = new JRadioButton("Client");
-    private JRadioButton jbadmin = new JRadioButton("Admin");
+	private JTextField jtId , jtFournisseur, jtClient1, jtClient2;
     private String nom, id;
     private String rien="";
 	
