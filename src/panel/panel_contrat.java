@@ -67,7 +67,7 @@ public class panel_contrat extends JPanel implements ActionListener{
 		
         // boutons validation et quitter
         JPanel panel_contrat_button=new JPanel();
-        panel_contrat_button.add(jbvalider = new JButton("Valider"));
+        panel_contrat_button.add(jbvalider = new JButton("Ajouter"));
         panel_contrat_button.add(jbquitter = new JButton("Quitter"));
 		jbvalider.addActionListener(this);
 		jbquitter.addActionListener(this);
