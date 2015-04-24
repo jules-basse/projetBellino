@@ -12,7 +12,7 @@ public class frame_contrat extends JFrame{
 	
 	public frame_contrat() {
 		JFrame fenetre = new JFrame();
-		fenetre.setTitle("Info");
+		fenetre.setTitle("Frame contrat");
 		fenetre.setSize(300, 280);
 	    fenetre.setLocationRelativeTo(null);
 	    panel_contrat monPanel = new panel_contrat();

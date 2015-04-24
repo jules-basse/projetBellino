@@ -1,6 +1,7 @@
 package panel;
 
 import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,6 +21,7 @@ public class panelchoixadmin extends JPanel implements ActionListener  {
 	{
 		montype = type;
 		JPanel paneladmin=new JPanel();
+		paneladmin.setLayout(new GridLayout(3,1,0,8));
 		paneladmin.add(jbajouter = new JButton("ajouter " + type));
 		paneladmin.add(jbconsulter = new JButton("consulter " + type));
 		

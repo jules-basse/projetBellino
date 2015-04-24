@@ -13,7 +13,7 @@ public class frameintadmin extends JFrame{
 	
 	public frameintadmin(String nom, String id) {
 		JFrame fenetre = new JFrame();
-		fenetre.setTitle("Info");
+		fenetre.setTitle("admin");
 	    fenetre.setSize(330, 260);
 	    fenetre.setLocationRelativeTo(null);
 	    panelinfoadmin monPanel = new panelinfoadmin(nom, id, this);

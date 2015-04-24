@@ -12,7 +12,7 @@ public class frameinfoadmin extends JFrame{
 		fenetre = new JFrame();
 		String nom ="";
 		String id= "";
-		fenetre.setTitle("Info");
+		fenetre.setTitle("Info admin");
 	    fenetre.setSize(330, 260);
 	    fenetre.setLocationRelativeTo(null);
 	    
