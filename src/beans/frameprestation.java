@@ -2,13 +2,13 @@ package beans;
 
 import javax.swing.JFrame;
 
-public class frameinfo extends JFrame{
+public class frameprestation extends JFrame{
 	
 	private String type_frame;
 	private String nom_frame;
 	private JFrame fenetre;
 	
-	public frameinfo(String nom, String id) {
+	public frameprestation(String nom, String id) {
 		JFrame fenetre = new JFrame();
 		fenetre.setTitle("Info");
 		fenetre.setSize(300, 180);
