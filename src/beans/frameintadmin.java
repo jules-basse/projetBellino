@@ -12,12 +12,11 @@ public class frameintadmin extends JFrame{
 	public frameintadmin(String nom, String id) {
 		JFrame fenetre = new JFrame();
 		fenetre.setTitle("Info");
-	    fenetre.setSize(300, 220);
+	    fenetre.setSize(330, 260);
 	    fenetre.setLocationRelativeTo(null);
 	    panelinfoadmin monPanel = new panelinfoadmin(nom, id, this);
 	    fenetre.setContentPane(monPanel);   
 		fenetre.setVisible(true);
-		fenetre.setResizable(false);
 }
 	
 
