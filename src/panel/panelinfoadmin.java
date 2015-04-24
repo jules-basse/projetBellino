@@ -1,4 +1,4 @@
-package beans;
+package panel;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -10,6 +10,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+
+import beans.frameinfoadmin;
 
 public class panelinfoadmin extends JPanel implements ActionListener{
 		private JButton jbclient, jbcontrat, jbprestation, jbfacture, jbquitter;

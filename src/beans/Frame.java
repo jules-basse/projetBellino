@@ -2,6 +2,8 @@ package beans;
 
 import javax.swing.JFrame;
 
+import panel.panel_utilisateur;
+
 public class Frame extends JFrame{
 	
 	private String type_frame;

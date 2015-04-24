@@ -2,6 +2,8 @@ package beans;
 
 import javax.swing.JFrame;
 
+import panel.panelinfo;
+
 public class frameinfo extends JFrame{
 	
 	private String type_frame;

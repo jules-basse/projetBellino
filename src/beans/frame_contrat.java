@@ -2,6 +2,8 @@ package beans;
 
 import javax.swing.JFrame;
 
+import panel.panel_contrat;
+
 public class frame_contrat extends JFrame{
 	
 	private String type_frame;
