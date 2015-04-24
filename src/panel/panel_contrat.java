@@ -81,22 +81,14 @@ public class panel_contrat extends JPanel implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==jbquitter)
 		{
-			System.exit(0);
-		}/*
-		else if(e.getSource()==jbvalider)
-		{
-			nom = jtnom.getText();
-			id = jtid.getText();
-			if(jbuser.isSelected()==true)
-			{
-				frameinfo info = new frameinfo(nom, id);
-			}
-			else if (jbadmin.isSelected()==true)
-			{
-				jtnom.setText(rien);
-				jtid.setText(rien);
-			}
-		}*/
+			Window window = SwingUtilities.windowForComponent(this);
+			if (window instanceof JFrame) {
+				JFrame frame = (JFrame) window;
+		 
+				frame.setVisible(false);
+				frame.dispose();
+			}		
+		}
 		
 	}
 }

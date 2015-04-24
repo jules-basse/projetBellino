@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import beans.frame_contrat;
 import beans.frameinfoadmin;
 
 public class panelinfoadmin extends JPanel implements ActionListener{
@@ -53,8 +54,7 @@ public class panelinfoadmin extends JPanel implements ActionListener{
 			}
 			if (e.getSource()==jbcontrat)
 			{
-				frameinfoadmin infocontrat = new frameinfoadmin();
-				infocontrat.getinfo("contrat");
+				frame_contrat infocontrat = new frame_contrat();
 			}
 			if (e.getSource()==jbprestation)
 			{
