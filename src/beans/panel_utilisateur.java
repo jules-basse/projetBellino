@@ -41,6 +41,7 @@ public class panel_utilisateur extends JPanel implements ActionListener{
 		jtid.addActionListener(this);
 		
 		jtnom.setPreferredSize(new Dimension(120,20));
+		
 		this.add(paneluser);
 		
 		// boutons radio

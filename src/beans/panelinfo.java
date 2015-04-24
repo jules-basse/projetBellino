@@ -21,21 +21,25 @@ public class panelinfo extends JPanel implements ActionListener{
 	public panelinfo(String nom, String id, JFrame frame )
 	{
 		JPanel panel =new JPanel();
-		panel.setLayout(new GridLayout(2,1,0,8));
+		panel.setLayout(new GridLayout(3,3,5,10));
+		// champs nom
 		panel.add(new JLabel("nom :"));
 		panel.add(jtinfonom=new JTextField());
+		jtinfonom.setText(nom);
+		jtinfonom.setPreferredSize(new Dimension(150,20));
+		// champ id
 		panel.add(new JLabel("numero : "));
 		panel.add(jtinfoid=new JTextField());
-		jtinfonom.setText(nom);
 		jtinfoid.setText(id);
-		jtinfonom.setPreferredSize(new Dimension(100,20));
-		panel.add(jbmodif = new JButton("Informations"));
 		this.add(panel, BorderLayout.NORTH);
-		this.setVisible(true);
 		
+		// boutons
 		JPanel panelb = new JPanel();
-		panelb.add(jbquitter = new JButton("Quitter"));
+		panel.add(jbmodif = new JButton("Informations"));
+		panel.add(jbquitter = new JButton("Quitter"));
+		jbmodif.addActionListener(this);
 		jbquitter.addActionListener(this);
+		jbmodif.setPreferredSize(new Dimension(100,20));
 		this.add(panelb, BorderLayout.NORTH);
 		
 	}
