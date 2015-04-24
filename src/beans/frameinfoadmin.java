@@ -2,6 +2,8 @@ package beans;
 
 import javax.swing.JFrame;
 
+import panel.panelinfoadmin;
+
 public class frameinfoadmin extends JFrame{
 	private JFrame fenetre;
 	
